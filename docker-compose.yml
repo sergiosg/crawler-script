@@ -1,0 +1,14 @@
+# Use root/pimpam as user/password credentials
+version: '3.1'
+
+services:
+
+#curl -Lx http://localhost:8118 http://jsonip.com/
+  proxy:
+    image: dperson/torproxy
+    environment: 
+      TD: GMT+0
+      TORUSER: root
+    ports:
+      - 8123:8118
+      - 9050:9050
