@@ -7,4 +7,5 @@ if [ $# -eq 0 ]; then
 fi
 
 bash proxy_up.bash 2> /dev/null 2>&1 &
+bash proxy_down.bash 2> /dev/null 2>&1 &
 bash crawl.bash $1
