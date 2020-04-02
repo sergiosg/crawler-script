@@ -14,10 +14,10 @@ wget \
      --retry-connrefused \
      --retry-on-http-error=429,503,504 \
      --waitretry=120 \
-     --recursive \
      --convert-link \
      --html-extension \
-     --domains $1 \
+     --recursive \
+     --no-parent \
      -t 0 \
      $1
 
